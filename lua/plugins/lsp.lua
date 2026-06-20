@@ -41,5 +41,6 @@ vim.lsp.enable({
     "jsonls", -- https://github.com/hrsh7th/vscode-langservers-extracted
     "dprint", -- https://github.com/dprint/dprint
     "tombi", -- https://github.com/tombi-toml/tombi
+    "rust-analyzer", -- https://github.com/rust-lang/rust-analyzer
 })
 

@@ -6,6 +6,7 @@ require('config.keybinds')
 require('config.commands')
 
 -- plugins
+require('plugins.colors')
 require('plugins.fzf')
 require('plugins.treesitter')
 require('plugins.mini')
