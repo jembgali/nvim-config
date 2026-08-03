@@ -90,6 +90,7 @@ vim.api.nvim_create_autocmd("ColorScheme", {
     end,
 })
 
+-- minii diff
 local MiniDiff = require("mini.diff")
 MiniDiff.setup({
     source = MiniDiff.gen_source.git({ index = false }),

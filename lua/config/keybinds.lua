@@ -22,8 +22,8 @@ vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", { desc = "Increase w
 -- Move line/s up/down
 vim.keymap.set("n", "<A-S-j>", ":m .+1<CR>==", { desc = "Move line down" })
 vim.keymap.set("n", "<A-S-k>", ":m .-2<CR>==", { desc = "Move line up" })
-vim.keymap.set("v", "A-S-j", ":m '>+1<CR>gv==gv", { desc = "Move selection down" })
-vim.keymap.set("v", "A-S-k", ":m '<-2<CR>gv==gv", { desc = "Move selection up" })
+vim.keymap.set("v", "<A-S-j>", ":m '>+1<CR>gv=gv", { desc = "Move selection down" })
+vim.keymap.set("v", "<A-S-k>", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
 
 -- Line indentation
 vim.keymap.set("v", "<", "<gv", { desc = "Indent left and reselect" })
