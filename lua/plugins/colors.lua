@@ -82,3 +82,4 @@ require("catppuccin").setup({
 
 -- setup must be called before loading
 vim.cmd.colorscheme "catppuccin-nvim"
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
