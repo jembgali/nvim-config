@@ -1,6 +1,6 @@
 vim.g.mapleader = " " -- space for leader
 vim.g.maplocalleader = " " -- space for localleader
--- vim.keymap.set("n", "<leader>cd", vim.cmd.Ex) -- if there is no explorer-like(nvim-tree, mini.nvim) available
+vim.keymap.set("n", "<leader>cd", vim.cmd.Ex) -- if there is no explorer-like(nvim-tree, mini.nvim) available
 
 -- Clear search 
 vim.keymap.set("n", "<leader>c", ":nohlsearch<CR>", { desc = "Clear search hightlights" })
