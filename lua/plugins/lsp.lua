@@ -37,11 +37,11 @@ vim.lsp.config("lua_ls", {
 
 -- Enable LSP Modules
 vim.lsp.enable({
-    "lua_ls", -- https://github.com/LuaLS/lua-language-server
-    -- "jsonls", -- https://github.com/hrsh7th/vscode-langservers-extracted
-    "dprint", -- https://github.com/dprint/dprint
-    "tombi", -- https://github.com/tombi-toml/tombi
-    "rust-analyzer", -- https://github.com/rust-lang/rust-analyzer
-    "biome", --https://github.com/biomejs/biome
+    "lua_ls",           -- https://github.com/LuaLS/lua-language-server
+    -- "jsonls",        -- https://github.com/hrsh7th/vscode-langservers-extracted
+    "dprint",           -- https://github.com/dprint/dprint
+    "tombi",            -- https://github.com/tombi-toml/tombi
+    "rust-analyzer",    -- https://github.com/rust-lang/rust-analyzer
+    "biome",            --https://github.com/biomejs/biome
 })
 
