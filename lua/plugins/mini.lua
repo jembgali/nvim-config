@@ -1,13 +1,7 @@
 vim.pack.add({
-    {
-        src = "https://github.com/nvim-mini/mini.nvim",
-    },
-    {
-        src = "https://github.com/rafamadriz/friendly-snippets",
-    },
-    {
-        src = "https://github.com/tpope/vim-fugitive"
-    },
+    "https://github.com/nvim-mini/mini.nvim",
+    "https://github.com/rafamadriz/friendly-snippets",
+    -- "https://github.com/tpope/vim-fugitive"
 })
 
 -- mini files
@@ -90,12 +84,15 @@ vim.api.nvim_create_autocmd("ColorScheme", {
     end,
 })
 
+-- mini git
+local MiniGit = require("mini.git")
+MiniGit.setup({})
+
 -- mini diff
 local MiniDiff = require("mini.diff")
 MiniDiff.setup({
     source = MiniDiff.gen_source.git({ index = false }),
 })
-
 -- vim.keymap.set("n", "[h", function() MiniDiff.goto_hunk("prev") end, { desc = "Prev hunk" })
 -- vim.keymap.set("n", "]h", function() MiniDiff.goto_hunk("next") end, { desc = "Next hunk" })
 -- [H first hunk
