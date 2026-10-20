@@ -10,8 +10,10 @@ local treesitter = require("nvim-treesitter")
 
 local ensure_installed = {
     -- languages
-    "lua", "typescript", "javascript", "css", "tsx", "html",
-    "json", "bash", "python", "rust",
+    "c", "lua", "bash", "python", "rust", "java",
+    -- web-related
+    "typescript", "javascript", "css", "tsx", "html",
+    "json",
     --extras
     "markdown","markdown_inline", "vim", "vimdoc",
 }

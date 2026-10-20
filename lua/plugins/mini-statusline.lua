@@ -94,8 +94,7 @@ local function make_statusline(is_active)
     end
 
     local filename = MiniStatusline.section_filename({ trunc_width = 140 })
-    local filetype = vim.bo.filetype
-    local file_and_type = join_nonempty({ filename, filetype }, " ")
+    local file_and_type = join_nonempty({ filename }, " ")
 
     local diagnostics = MiniStatusline.section_diagnostics({ trunc_width = 75 })
     local diff = MiniStatusline.section_diff({ trunc_width = 75 })
