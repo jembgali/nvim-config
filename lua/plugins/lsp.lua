@@ -44,4 +44,5 @@ vim.lsp.enable({
     "rust-analyzer",    -- https://github.com/rust-lang/rust-analyzer
     "biome",            -- https://github.com/biomejs/biome
     "clangd",           -- https://clangd.llvm.org/installation
+    "shuck",            -- https://github.com/ewhauser/shuck
 })

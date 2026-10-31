@@ -88,7 +88,8 @@ local function join_nonempty(parts, separator)
 end
 
 local function make_statusline(is_active)
-    local mode, mode_hl = MiniStatusline.section_mode({ trunc_width = 120 })
+    local mode, mode_hl = MiniStatusline.section_mode({ trunc_width = 0 })
+    mode = mode:upper()
     if not is_active then
         mode_hl = "MiniStatuslineInactiveMode"
     end
